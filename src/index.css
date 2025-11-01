@@ -1,1 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    --color-dark-main: #0D0D0D;
+    --color-dark-contrast: #1A1A1A;
+    --color-dark-detail: #242424;
+
+    --color-primary: #8B5CF6;
+    --color-primary-hover: #7C3AED;
+    --color-accent-light: #C084FC;
+    --color-accent-neon: #B26CFF;
+
+    --color-tech-neon: #00FFFF;
+    --color-tech-edge: #FF00FF;
+    --color-tech-electric: #3B82F6;
+
+    --font-title: "Orbitron", sans-serif;
+    --font-body: "Outfit", sans-serif;
+}
+
+@layer base {
+    body {
+        background-color: var(--color-dark-main);
+        color: var(--color-dark-contrast);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .font-title {
+        font-family: var(--font-title);
+    }
+    .font-body {
+        font-family: var(--font-body);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-title);
+        letter-spacing: -0.5px;
+    }
+
+    h1 {
+        @apply text-4xl md:text-5xl font-extrabold;
+        color: var(--color-accent-neon);
+        text-shadow: 0 0 8px var(--color-accent-neon), 0 0 16px var(--color-accent-neon);
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl font-bold;
+        color: var(--color-accent-light);
+    }
+
+    h3 {
+        @apply text-2xl font-semibold;
+        color: var(--color-dark-detail);
+    }
+
+    h4, h5, h6 {
+        @apply text-xl font-medium;
+        color: var(--color-dark-detail);
+    }
+
+    p, span {
+        font-family: var(--font-body);
+        color: var(--color-dark-contrast);
+        line-height: 1.6;
+    }
+
+    a {
+        font-family: var(--font-body);
+        color: var(--color-accent-light);
+        transition: color 0.3s, text-shadow 0.3s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--color-accent-neon);
+        text-shadow: 0 0 4px var(--color-accent-neon), 0 0 8px var(--color-accent-neon);
+    }
+
+    strong {
+        font-family: var(--font-body);
+        font-weight: 600;
+        color: var(--color-dark-main);
+    }
+}
