@@ -22,7 +22,7 @@
 
 @layer base {
     body {
-        background-color: var(--color-dark-contrast);
+        background-color: var(--color-dark-main);
         line-height: 1.6;
         margin: 0;
         padding: 0;
