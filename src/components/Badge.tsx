@@ -19,9 +19,9 @@ export default function Badge({
                 flex justify-center items-center 
                 transition-all duration-300 
                 ${
-                glow
-                    ? "hover:shadow-[0_0_20px_var(--color-accent-neon)] hover:border-accent-neon/40"
-                    : ""
+                    glow
+                        ? "hover:shadow-[0_0_20px_var(--color-accent-neon)] hover:border-accent-neon/40"
+                        : ""
                 }
                 ${className}
             `}
