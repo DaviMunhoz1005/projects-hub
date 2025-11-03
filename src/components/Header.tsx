@@ -10,7 +10,7 @@ export default function Header() {
     useEffect(() => {
         if (menuOpen) setIsVisible(true);
         else {
-            const timer = setTimeout(() => setIsVisible(false), 300); // mesmo tempo da animação
+            const timer = setTimeout(() => setIsVisible(false), 300);
             return () => clearTimeout(timer);
         }
     }, [menuOpen]);
@@ -67,13 +67,10 @@ export default function Header() {
                     Download CV
                 </Button>
             </section>
-
-            <button
-                onClick={() => setMenuOpen(!menuOpen)}
-                className="lg:hidden flex items-center justify-center w-10 h-10 border-2 text-accent-light text-shadow-accent-neon border-accent-light rounded-lg hover:shadow-accent-neon hover:shadow-lg transition-all duration-300"
-            >
+            
+            <Button icon onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden">
                 {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            </Button>
 
             {isVisible && (
                 <nav

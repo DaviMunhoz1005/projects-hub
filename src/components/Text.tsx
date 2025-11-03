@@ -16,17 +16,17 @@ export default function Text({
     const Tag = as as keyof JSX.IntrinsicElements;
 
     const colors: Record<string, string> = {
-      light: "text-accent-light",
-      contrast: "text-dark-contrast",
-      detail: "text-dark-detail",
-      white: "text-white",
+        light: "text-accent-light",
+        contrast: "text-dark-contrast",
+        detail: "text-dark-detail",
+        white: "text-white",
     };
 
     return (
         <Tag
-          className={`font-body leading-relaxed transition-all duration-200 ${colors[color]} ${className}`}
+            className={`font-body leading-relaxed transition-all duration-200 ${colors[color]} ${className}`}
         >
-          {children}
+            {children}
         </Tag>
     );
 }
