@@ -38,7 +38,7 @@ export default function Title({
     };
 
     const effects = `
-        ${glow ? "drop-shadow-[0_0_6px_var(--color-accent-neon)]" : ""}
+        ${glow ? "drop-shadow-lg drop-shadow-accent-neon" : ""}
         ${animate ? "animate-pulse" : ""}
     `;
 

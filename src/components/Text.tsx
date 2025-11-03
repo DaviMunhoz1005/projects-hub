@@ -16,9 +16,9 @@ export default function Text({
     const Tag = as as keyof JSX.IntrinsicElements;
 
     const colors: Record<string, string> = {
-      light: "text-[var(--color-accent-light)]",
-      contrast: "text-[var(--color-dark-contrast)]",
-      detail: "text-[var(--color-dark-detail)]",
+      light: "text-accent-light",
+      contrast: "text-dark-contrast",
+      detail: "text-dark-detail",
       white: "text-white",
     };
 
