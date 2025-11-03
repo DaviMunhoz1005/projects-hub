@@ -16,7 +16,7 @@ export default function Link({
     index = 0,
 }: LinkProps) {
     const base =
-        "font-body text-xl text-dark-detail hover:text-accent-neon transition-all duration-300 font-bold";
+        "font-body md:text-lg 2xl:text-xl text-dark-detail hover:text-accent-neon transition-all duration-300 font-bold";
     const neon = glow
         ? "hover:drop-shadow-xl hover:drop-shadow-accent-neon hover:font-bold"
         : "";
