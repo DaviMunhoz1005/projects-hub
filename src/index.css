@@ -27,6 +27,28 @@
         margin: 0;
         padding: 0;
     }
+
+    html, body {
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-accent-light) var(--color-dark-main);
+    }
+
+    html::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    html::-webkit-scrollbar-track {
+        background: var(--color-dark-main);
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background: var(--color-accent-light);
+        border-radius: 9999px;
+    }
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: var(--color-accent-neon);
+    }
 }
 
 @layer utilities {
