@@ -6,7 +6,9 @@ export default function App() {
     return (
         <>
             <Header />
-            <About />
+            <div className="flex justify-center items-center">
+                <About />
+            </div>
         </>
     )
 }
