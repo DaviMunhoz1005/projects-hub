@@ -85,4 +85,33 @@
     .animate-fade-out {
         animation: fade-out 0.3s ease-in forwards;
     }
+
+    @keyframes neon-flow {
+        0%, 100% {
+            box-shadow:
+                0 0 4px var(--color-accent-neon),
+                0 0 10px var(--color-accent-light);
+            opacity: 0.8;
+        }
+        50% {
+            box-shadow:
+                0 0 6px var(--color-accent-light),
+                0 0 14px var(--color-accent-neon);
+            opacity: 1;
+        }
+    }
+
+    .neon-line {
+        position: absolute;
+        bottom: 0;
+        left: -5%;
+        width: 110%;
+        height: 2px;
+        background: linear-gradient(90deg, var(--color-accent-neon), var(--color-accent-light), var(--color-accent-neon));
+        transform: rotate(-3deg);
+        transform-origin: left center;
+        animation: neon-flow 3s ease-in-out infinite;
+        border-radius: 2px;
+        filter: drop-shadow(0 0 4px var(--color-accent-neon));
+    }
 }
