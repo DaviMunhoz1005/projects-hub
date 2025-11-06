@@ -113,4 +113,9 @@
         border-radius: 2px;
         filter: drop-shadow(0 0 4px var(--color-accent-neon));
     }
+
+    .neon-line--reverse {
+        transform: rotate(3deg);
+        transform-origin: right center;
+    }
 }
