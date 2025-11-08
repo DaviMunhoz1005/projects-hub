@@ -1,19 +1,17 @@
 import React from "react";
 
 type TextProps = {
-    as?: "p" | "span" | "strong";
     children: React.ReactNode;
     color?: "light" | "contrast" | "detail" | "white";
     className?: string;
 };
 
 export default function Text({
-    as = "p",
     children,
     color = "contrast",
     className = "",
 }: TextProps) {
-    const Tag = as as keyof JSX.IntrinsicElements;
+    const Tag: React.ElementType = `p`;
 
     const colors: Record<string, string> = {
         light: "text-accent-light",
