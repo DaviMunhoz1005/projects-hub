@@ -17,7 +17,7 @@ export default function Title({
     color = "accent",
     className = "",
 }: TitleProps) {
-    const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+    const Tag: React.ElementType = `h${level}`;
 
     const base =
         "font-title tracking-tight transition-all duration-300 select-none";
